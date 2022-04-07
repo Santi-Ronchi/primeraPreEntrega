@@ -1,0 +1,30 @@
+{{#each carroPedido}}
+<h1>CARRO ID: {{id}}</h1>
+{{#if listaProd.length}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#ID</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Imagen</th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each listaProd}}
+        <tr>
+          <th>{{id}}</th>
+          <td>{{titulo}}</td>
+          <td>{{precio}}</td>
+          <td><img src="{{url}}" height="50" width="50"></td>
+        </tr>
+        {{/each}}
+  </tbody>
+</table>
+
+{{ else }}
+  <div class="alert"> 
+    <h1>NO HAY PRODUCTOS</h1>
+  </div>
+{{/if}}
+{{/each}}

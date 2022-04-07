@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "ts-node",
+        "type": "node",
+        "request": "launch",
+        "args": [
+          "${relativeFile}"
+        ],
+        "runtimeArgs": ["-r"],
+        "cwd": "${workspaceRoot}",
+        "protocol": "inspector",
+        "internalConsoleOptions": "openOnSessionStart",
+        "program": "${workspaceRoot}\\server.js"
+      }
+    ]
+  }
